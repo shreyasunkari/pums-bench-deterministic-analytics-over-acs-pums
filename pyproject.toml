@@ -1,0 +1,21 @@
+[project]
+name = "pums-bench-deterministic-analytics-over-acs-pums"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Shreya Sunkari", email = "shreyasunkari6@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.5.3",
+    "pandas>=3.0.5",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+pums-bench-deterministic-analytics-over-acs-pums = "pums_bench_deterministic_analytics_over_acs_pums:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
